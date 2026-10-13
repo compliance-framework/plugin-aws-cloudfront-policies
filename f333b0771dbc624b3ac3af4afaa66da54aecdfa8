@@ -1,2 +1,5 @@
 lisa-design:
 Never-released repo (W3 batch 3 addendum): manifest seeded at 0.0.0 with no bootstrap-sha, so release-please counts the whole (short) history and its first release PR proposes initial-version 0.1.0. Callers copied from mock-plugin-policies-1 (via the merged plugin-file-attestation-policies#4) with pins at v1.5.2. ci.yml already at v1.5.2 with release-checks, unchanged.
+
+lisa-selfreview:
+Pass 1 (rules core + rego-policy): approve, no findings. actionlint v1.7.12 clean; OPA 1.14.1 build/check/test (6/6) pass; config has no drift from workflows release-please/defaults.json at v1.5.2.
