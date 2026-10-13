@@ -1,0 +1,2 @@
+lisa-design:
+W2-S4-T02: shared policy CI caller copied from mock-plugin-policies-1, all three pins at workflows v1.5.2 (6e7fc9c). Repo had no workflows, so nothing deleted; no release workflows added (W3 adds them). Errors-only fixes: opa fmt 1.14.1 on the test file (AST identical with locations stripped). Regal warnings (5) left as-is per user decision 2026-10-13. Pre-existing Rego gaps (no risk_templates, violation without id, unused data.json key) are out of scope: behaviour must not change.
