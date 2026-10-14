@@ -22,10 +22,6 @@ Each policy evaluates one CloudFront distribution at a time using:
 | --- | --- | --- |
 | `cloudfront_require_https_viewer_protocol` | no cache behaviour uses `viewer_protocol_policy` `allow-all` (unencrypted HTTP); each offending behaviour is reported with its path pattern | CC6.7 |
 
-## Policy data
-
-`policies/data.json` defines `approved_viewer_protocol_policies` (`["redirect-to-https", "https-only"]`), but no policy reads it today: `cloudfront_require_https_viewer_protocol` flags `allow-all` directly, so overriding this key has no effect.
-
 ## Testing
 
 Run local checks with:
