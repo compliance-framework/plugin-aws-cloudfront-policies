@@ -1,0 +1,3 @@
+lisa-design:
+- LICENSE is a byte-for-byte copy of plugin-aws-ec2-policies' LICENSE (AGPL-3.0).
+- README documents that approved_viewer_protocol_policies in data.json is not read by any policy (the rego hard-codes allow-all) rather than presenting it as a working override; changing the policy is out of this docs task's scope.
