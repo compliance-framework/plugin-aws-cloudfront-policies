@@ -3,3 +3,6 @@ lisa-design:
 - opa build still writes /data.json into the bundle; it is now {} instead of {"approved_viewer_protocol_policies": [...]}. Rego files and manifest are unchanged.
 - Removed the README "Policy data" section entirely: it only described this key.
 - Regal: same 5 pre-existing warnings (0 errors) before and after with the shared v1.6.0 config; not touched (out of scope).
+
+lisa-selfreview:
+pass 1: reviewer re-read the diff (data.json removed, README section removed), grepped for leftover references (none), ran opa fmt/check --strict/test/build (1.14.1) and regal 0.43.0 with the shared config: no findings. verdict approve.
