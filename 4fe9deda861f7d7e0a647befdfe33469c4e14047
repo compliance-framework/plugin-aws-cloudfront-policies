@@ -1,0 +1,5 @@
+lisa-design:
+- Deleted policies/data.json instead of leaving it as {}: it held only the unused key, nothing (Makefile, README, ci-policies/release-policies/preview workflows) requires the file, and sibling policy repos with no data (e.g. plugin-aws-rds-aurora-psql-policies, plugin-github-settings-policies) have no data.json.
+- opa build still writes /data.json into the bundle; it is now {} instead of {"approved_viewer_protocol_policies": [...]}. Rego files and manifest are unchanged.
+- Removed the README "Policy data" section entirely: it only described this key.
+- Regal: same 5 pre-existing warnings (0 errors) before and after with the shared v1.6.0 config; not touched (out of scope).
